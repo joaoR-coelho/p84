@@ -3,23 +3,21 @@
 <head>
 <style>
 body{
-
+	background-image: url("concrete-road.jpg");
     background-position: center;
     background-size: cover;
 }
 #myCanvas
 {
-    margin-top: 10px;
-	border-width:40px;
+    margin-top: 30px;
+	border-width:10px;
 	background-color: white; 
 	border-style:ridge;
 }
 
-h1,h4
+h1,h3,h4
 {
-	
-	color:red!important;
-	
+	color: rgb(255, 241, 43) !important;
 }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -27,21 +25,24 @@ h1,h4
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<title>Valores ASCII</title>
+	<title>Manobrista</title>
 </head>
-<body>
+<body onload="add();">
 
 <center>
-<h1>Keyboard keys</h1>
-	<canvas id="myCanvas" width="500" height="300">
-	</canvas>
-	<div id="d1"></div>
+<h1>Manobrista</h1>
+<h3>Mova o carro com os botões de seta do teclado.</h3>
 <h4>
-	<b class="text-danger">NOTE : </b> PRESSIONE QUALQUER TECLA 
+	<b class="text-danger">OBSERVAÇÃO: </b> PRESSIONE QUALQUER BOTÃO DE SETA SE O CARRO NÃO ESTIVER VISÍVEL
 </h4>
+
+	<canvas id="myCanvas" width="800" height="400">
+	</canvas>
+
 
 </center>
 <script src="main.js">
 </script>
 </body>
 </html>
+
